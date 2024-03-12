@@ -329,6 +329,10 @@ img {
   background-color: var(--iris);
   letter-spacing: 0.02em;
   color: var(--white);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-delay: 50ms;
 }
 
 .order-section-button:hover,
@@ -409,10 +413,7 @@ img {
 
 .team-section-item-title {
   margin-top: 32px;
-}
-
-.team-section-item-description {
-  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .visually-hidden {
@@ -576,8 +577,9 @@ img {
 
 .modal {
   position: absolute;
-  top: calc(50% - 204px);
-  left: calc(50% - 242px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 4px;
   background: var(--dairy);
   width: 100%;
@@ -603,12 +605,20 @@ img {
   border-radius: 50%;
   background-color: var(--cornflower);
   border: 1px solid rgba(0, 0, 0, 0.10);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, border;
+  transition-duration: 250ms;
+  transition-delay: 50ms;
 }
 
 .modal-btn-icon {
   width: 8px;
   height: 8px;
   fill: var(--navy-blue);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-delay: 50ms;
 }
 
 .modal-btn:hover, .modal-btn:focus {
